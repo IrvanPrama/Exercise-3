@@ -1,0 +1,63 @@
+@font-face {
+    font-family:"Velekom", sans-serif;
+    src:url("../font/Velekom.ttf") format("ttf");
+    font-weight:normal;
+    font-style:normal;
+}
+tbody{
+    text-align: center;
+    padding: 15rem;
+}
+a {
+    color: lightgrey;   
+}
+
+a:hover {
+    color:#212529;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(../img/back.jpg);
+    background-color: black;
+}
+
+.title{
+    color: white;
+    font-family:"Velekom", sans-serif;
+    font-size: 34px;
+    text-align: center !important;
+    transition: 1s;
+}
+
+.title:hover{
+    color: lightgrey !important;
+    font-size: 40px !important;
+}
+
+tr th.terrain{
+    cursor: default !important;
+}
+
+th{
+    background-color: black !important;
+    text-align: center;
+    vertical-align: middle !important;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: white !important ;
+    color: black !important;
+}
+
+.note{
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 12px;
+    color: white !important ;
+}
+

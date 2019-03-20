@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" cosntent="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Planet</title>
+</head>
+
+<body>
+    <h1 class="container title mt-4">List Pelanet <br> Ksatria Bima Sakti</h1>
+    <div class="container mt-4">
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Filter</a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" id="cari" onkeyup="searchData()" type="search"
+                        placeholder="Search By..." aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <p class="note">NB: click the header table to sort according to the category, based on<a
+                        href="https://swapi.co/api/planets/"> swapi</a></p>
+            </div>
+        </nav>
+        <div class="table-responsive">
+            <table class="table table-stripted table-bordered table-light table-hover table-sm table-striped"
+                id="tableJson">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" id="sortName" onclick="sortName();">Name</th>
+                        <th scope="col" id="sortRotation" onclick="sortRotation()">Rotation Period</th>
+                        <th scope="col" id="sortClimate" onclick="sortClimate();">Climate</th>
+                        <th scope="col" id="sortGravity" onclick="sortGravity();">Gravity</th>
+                        <th scope="col" id="sortOrbital" onclick="sortOrbital();">Orbital Period</th>
+                        <th scope="col" id="sortDiameter" onclick="sortDiameter();">Diameter</th>
+                        <th scope="col" class="terrain">Terrain</th>
+                        <th scope="col" id="sortSurface" onclick="sortSurface();">Surface Water</th>
+                        <th scope="col" id="sortPopulation" onclick="sortPopulation();">Population</th>
+                        <th scope="col">Residents</th>
+                        <th scope="col">Films</th>
+                        <th scope="col">Credited</th>
+                        <th scope="col">Edited</th>
+                        <th scope="col">Url</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTabel"></tbody>
+            </table>
+        </div>
+</body>
+
+<script src="js/data.js"></script>
+<script src="js/index.js"></script>
+
+</html>
